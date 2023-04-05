@@ -1,5 +1,2 @@
 # ignore all csv files
 *.csv
-
-# ignore all files in the data directory
-data/
