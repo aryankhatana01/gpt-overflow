@@ -6,6 +6,7 @@ repos:
     hooks:
     -   id: black
         args: [--safe]
+        exclude: ^data/
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.2.0
@@ -16,24 +17,28 @@ repos:
     -   id: check-added-large-files
     -   id: debug-statements
         language_version: python3
+        exclude: ^data/
 
 -   repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
     -   id: flake8
         language_version: python3
+        exclude: ^data/
 
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v2.6.0
     hooks:
     -   id: reorder-python-imports
         args: [--application-directories=.:src, --py36-plus]
+        exclude: ^data/
 
 -   repo: https://github.com/asottile/pyupgrade
     rev: v2.29.0
     hooks:
     -   id: pyupgrade
         args: [--py36-plus]
+        exclude: ^data/
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.910
