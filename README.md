@@ -5,6 +5,10 @@ domain specific knowledge.
 
 The Dataset: https://www.kaggle.com/datasets/stackoverflow/pythonquestions
 
+Finetuned Model Weights can be downloaded from here: https://www.kaggle.com/datasets/aryankhatana/gptoverflow-model-weights
+
+(This model was trained by me on a GCP instance with an NVIDIA L4 and took around 8 days to train from 12 epochs. This model can still be trained for longer and give better results.)
+
 In this repo I would be using the pretrained GPT-2 weights from
 huggingface instead of training the whole model myself due to lack of GPUs :(
 
